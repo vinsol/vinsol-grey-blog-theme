@@ -21,11 +21,11 @@
 					
 					<h4>Clients Speak</h4>
 
-					<a href='http://www.norbauer.com'><img alt="Images" class="client" height="100" src="http://assets0.gamesonrent.com/testimonials/0000/0001/images.jpg?1275298002" width="75" /></a>
+					<a href='http://www.norbauer.com'><img alt="Images" class="client" height="100" src="http://vinsol.com/blog/wp-content/uploads/2010/11/ryan_norbauer.jpg" width="75" /></a>
 					<div style="margin-bottom: 10px;"><span class="client_name"><a href='http://www.norbauer.com'>Ryan Norbauer</a></span>, <span class="client_about">Founder and Partner at Shy Hipster Networks . Hired Vinsol in 2007. </span></div>
 					<div class="client_speak">
-					<img alt="Quote-left" src="http://assets2.gamesonrent.com/images/quote-left.png?1275305445" style="padding-right: 5px;" />Working with Vinsol has been one of the most rewarding and productive collaborations I've ever had in the technology industry. Manik is an intelligent and honest engineer with a great faculty for open and clear communication, and his team include some of the swiftest and keenest developers I've ever had the pleasure to work with. They're great value for money, excellent people who are a joy to know and interact with, and above all they really know their stuff
-					<img alt="Quote-right" src="http://assets0.gamesonrent.com/images/quote-right.png?1275305445" style="padding-left: 5px;" />
+					<img alt="Quote-left" src="http://vinsol.com/blog/wp-content/uploads/2010/11/quote-left.png" style="padding-right: 5px;" />Working with Vinsol has been one of the most rewarding and productive collaborations I've ever had in the technology industry. Manik is an intelligent and honest engineer with a great faculty for open and clear communication, and his team include some of the swiftest and keenest developers I've ever had the pleasure to work with. They're great value for money, excellent people who are a joy to know and interact with, and above all they really know their stuff
+					<img alt="Quote-right" src="http://vinsol.com/blog/wp-content/uploads/2010/11/quote-right.png" style="padding-left: 5px;" />
 					</div>
 					
 				</div>
