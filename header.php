@@ -21,15 +21,49 @@
 	  <div class='wrapper'>
 	    <div id="top">
 		    <div id="head">
-    		  <h1 class="logo ie6fix"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-    		  <ul id="nav">
-    				<li><a href="http://vinsol.com"><strong>Home</strong><span>Let's get started!</span></a></li>
-    				<li><a href="http://www.vinsol.com/blog"><strong>Blog</strong><span>RoR hacks</span></a></li>
-    				<li><a href="http://vinsol.com/portfolio"><strong>Portfolio</strong><span>Projects Done</span></a></li>
-    				<li><a href="http://vinsol.com/team"><strong>Team</strong><span>Awesome Devs</span></a></li>
-				    <li><a href="http://vinsol.com/contact"><strong>Contact</strong><span>Give us a shout</span></a></li>
-			    </ul>
+				<div class="topHeader">
+	    		  <h1 class="logo ie6fix"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+			  
+				  <div class="contact">
+					  <div class="socialLinks">
+						<a href='http://feeds2.feedburner.com/Vinsol' class='rss'>&nbsp;</a>
+						<a href='https://www.facebook.com/thevinsol' class='fb'></a>
+						<a href='http://www.twitter.com/the_vinsol' class='twitter'></a>
+					  </div>
+					  <div class="contactInfo">
+						<span class='contactLabel'>Email us at: <span class='contactVal'>sales@vinsol.com</span></span>
+						<span class='contactLabel'>Skype: <span class='contactVal'>Vinsol</span></span>
+					  </div>
+					</div>
+					<div class='clear'></div>
+				</div>
+			
+				<div class='bottomHeader'>
+					<a href='http://vinsol.com/' class='home'>&nbsp;</a>
+					<ul class='topNav'>
+					  <li><a href='http://vinsol.com/about' class="first">About Us</a>
+					  	<ul class="first">
+							<li><a href="http://vinsol.com/methodology">Our Methodology</a></li>
+							<li><a href="http://vinsol.com/team">Our Team</a></li>
+						</ul>
+					  </li>
+					  <li><a href='http://vinsol.com/our_services'>Our Services</a>
+					  	<ul>
+							<li><a href="http://vinsol.com/ruby-on-rails-consulting">RoR Development &amp; Consulting</a></li>
+							<li><a href="http://vinsol.com/iphone-development">iPhone Development &amp; Consulting</a></li>
+							<li><a href="http://vinsol.com/android-development">Android Development &amp; Consulting</a></li>
+						</ul>
+					  </li>
+					  <li><a href='http://vinsol.com/portfolio'>Portfolio</a></li>
+					  <li><a href='http://vinsol.com/testimonials'>Testimonials</a></li>
+					  <li><a href='http://vinsol.com/careers'>Careers</a></li>
+					  <li><a href='http://www.vinsol.com/blog'>Blog</a></li>
+					  <li><a href='http://vinsol.com/contact'>Contact Us</a></li>
+					</ul>
+			  </div>
 		    </div>	<!-- end #head -->
+			
+			<div class="page-bg-top"></div>
     		<div id="main">
     		 <div id ="sidebar">
     		   <div class="box box_small">

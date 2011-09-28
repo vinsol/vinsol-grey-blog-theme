@@ -8,21 +8,23 @@ padding:0;
 
 
 body{
-font-size:13px;
-font-family: Arial, Helevtica, Verdana, san-serif;
-line-height:23px;
-position:relative;
+  background:transparent url("images/mainBg.gif") repeat 0 0;
+  font-family:Tahoma, Arial;
+  font-size:13px;
+  position:relative;
+  margin:0px;
 }
 
 .wrapper{ 
 width:100%;
 position:relative;
 display:table;
+background:transparent url("images/bg-new.png") no-repeat 0 0;
 }
 
 #top{
 position:relative;
-width:960px;
+width:990px;
 margin:0 auto;
 }
 
@@ -30,8 +32,8 @@ margin:0 auto;
 /*HEAD AREA*/
 
 #head{
-height:110px;
 z-index: 5;
+margin-bottom:20px;
 }
 
 #top .logo, .logo a{
@@ -209,11 +211,14 @@ top:2px;
 /*content*/
 
 #main{
-padding-top:40px;
-width:940px;
+width:958px;
 position: relative;
-margin: 0 auto;
 overflow: hidden;
+padding:15px;
+background:#FFFFFF;
+border-left:solid 1px #cdcdcd;
+border-right:solid 1px #cdcdcd;
+line-height:21px;
 }
 
 #content{
@@ -405,9 +410,7 @@ padding:3px 6px;
 
 /*footer*/
 #footer{
-width:940px;
 position: relative;
-padding-top: 30px;
 margin: 0 auto;
 }
 
@@ -591,13 +594,14 @@ h1,h2,h3,h4,h5,h6, legend{
 letter-spacing: 0.4px;
 font-weight:normal;
 padding-bottom:5px;
-line-height:1.4em;
+line-height:40px;
 position: relative;
-font-family:"Trebuchet MS", Arial, Helvetica, san-serif;
+font-family:"Georgia", Arial, Helvetica, san-serif;
+font-style:italic;
 }
 
 h1{clear:both; font-size:38px;font-weight:bold;}
-h2{font-size:36px; clear:both;}
+h2{font-size:36px; clear:both; margin-bottom:10px; }
 h2.widgettitle, legend{font-size:22px; clear:both;}
 h4{font-size:16px; clear:both;}
 h5{font-size:14px; clear:both;}
@@ -894,18 +898,17 @@ float:right;
 
 /*Structured layout mainpage*/
 body{
-color:#777;
-background: #222;
+color:#454748;
 }
 
-.wrapper{ 
+/*.wrapper{ 
 background: #fff url(images/bg.png) repeat-x left top;
 }
 
 #subpage .wrapper{
 background: #fff url(images/bg.png) repeat-x 0 -370px;
 }
-
+*/
 #footerwrap, #subpage #footerwrap{
 background-color: #222;
 background: none;
@@ -1086,10 +1089,8 @@ a:hover img.client{
 }
 
 #footer{
-width:940px;
 position: relative;
-padding-top: 30px;
-margin: 0 auto;
+margin: 40px 0px 0px;
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer a
@@ -1195,13 +1196,12 @@ color:#777;
 }
 
 .wrapper a{
-color:#777;
-border-bottom: 1px solid #ccc;
+color:#045198;
 }
 
 .wrapper a:hover{
-border-bottom: 1px solid #777;
-color:#777;
+color:#045198;
+text-decoration:underline;
 }
 
 
@@ -1344,3 +1344,270 @@ border-bottom:none;
  background:none;
  border-bottom:none;
 }
+
+
+
+/*----- CSS for new theme by Ashwani Sharma -----*/
+#head .contact{
+  float:right;
+  width:300px;
+  margin-top:10px;
+}
+#head .socialLinks{
+  float:right;
+  height:50px;
+}
+#head .socialLinks a{
+  width:26px;
+  height:26px;
+  padding:7px;
+  margin:0 5px;
+  float:left;
+  border-bottom:none;
+}
+#head .socialLinks a.rss{
+  background:transparent url("images/sprite.png") no-repeat 0 -67px;
+}
+#head .socialLinks a.fb{
+  background:transparent url("images/sprite.png") no-repeat 1px -107px;
+}
+#head .socialLinks a.twitter{
+  background:transparent url("images/sprite.png") no-repeat 1px -147px;
+}
+#head .contactInfo{
+  float:right;
+  font-size:13px;
+  width:100%;
+  clear:both;
+}
+#head span.contactLabel{
+  margin-left:20px;
+}
+#head span.contactLabel span.contactVal{
+  color:#045198;
+}
+
+
+#head .bottomHeader{
+  margin:15px 0px;
+  width:990px;
+  background:transparent url("images/sprite.png") right -238px no-repeat;
+  clear:both;
+  float:left;
+}
+#head .bottomHeader ul{
+	background:transparent url("images/navBg.png") 0 0 repeat-x;
+	float:left;
+	width:912px;
+	margin-left:-1px;
+	height: 50px;
+	list-style:none;
+}
+#head .bottomHeader ul li{
+	float:left;
+	list-style:none;
+}
+#head .bottomHeader a{
+  float:left;
+  color:#fff;
+  font-size: 18px;
+  padding:14px 26px;
+  text-align:center;
+}
+#head .bottomHeader ul li a{
+  background:transparent url("images/sprite.png") no-repeat 0 -339px;
+}
+#head .bottomHeader a.home{
+  background:transparent url("images/sprite.png") no-repeat 0 -187px;
+  width:70px;
+  height:50px;
+  padding:0px;
+}
+#head .bottomHeader ul li a.first{
+  background:none;
+}
+
+.clear{ clear:both; }
+
+
+
+#footer{
+  background-color:#000;
+}
+#footer .cols{
+  width:990px;
+  margin:0 auto 10px;
+  padding:29px 0;
+  padding-bottom:14px;
+  overflow:hidden;
+  border-bottom:1px dashed #989898;
+}
+#footer .col{
+  width:310px;
+  float:left;
+  padding-right:20px;
+}
+#footer .col hr{
+  height:2px;
+  color:#fff;
+  background-color:#fff;
+  border:none;
+}
+#footer .col .title{
+  color:#fff;
+  font-family:'Georgia';
+  font-size:24px;
+}
+#footer .col .know{
+  background:transparent url("images/sprite.png") no-repeat 0 -1023px;
+}
+#footer .col .clients{
+  background:transparent url("images/sprite.png") no-repeat 0 -1052px;
+}
+#footer .col .twitter{
+  background:transparent url("images/sprite.png") no-repeat 0 -1080px;
+}
+#footer .col .title span{
+  display:block;
+  margin-left:45px;
+}
+#footer .col .title span.blue{
+  color:#4bb5f8;
+  display:inline !important;
+  margin-left:0;
+}
+#footer .col .txt{
+  font-family:'Tahoma';
+  margin-top:13px;
+  min-height:130px;
+}
+#footer .col .txt a.txtTitle{
+  color:#4bb5f8;
+  font-size:16px;
+}
+#footer .col .txt .txtBody, #footer .col .txt .tweetTxt{
+  color:#989898;
+  margin-top:18px;
+  font-size:13px;
+}
+#footer .col .txt .tweetTxt a, #footer .col .txt .tweetTxt .tweetBy, #footer .col span.twitterFollow a{
+  color:#4bb5f8;
+}
+#footer .col a.smallBtn{
+  width:70px;
+  margin-top:27px;
+  height:21px;
+  padding:0px 6px 0px 16px;
+  height:50px;
+  font-size:13px;
+  color:#FFFFFF;
+  line-height:51px;
+  font-weight:bold;
+}
+#footer .col a.smallBtn span{
+  left:73px;
+  position:relative;
+  top:-49px;
+}
+#footer .col .txt span.clientImg{
+  float:left;
+}
+#footer .col .txt span.clientInfo{
+  display:block;
+  font-size:13px;
+  position:relative;
+  left:6px;
+  top:-2px;
+  width: 283px;
+}
+#footer .col .txt span.clientInfo a{
+  color:#fff;
+}
+#footer .col .txt .tweetTxt{
+  border-bottom: 1px dotted #989898;
+  text-align:justify;
+}
+#footer .col .txt .tweetTxt .tweetBy{
+  overflow:hidden;
+}
+#footer .col .txt .tweetTxt .tweetBy span{
+  float:right;
+  padding:10px 0;
+}
+#footer .col span.twitterFollow{
+  background:transparent url("images/sprite.png") no-repeat 0 -1111px;
+  float:right;
+  margin:7px 0;
+}
+#footer .col span.twitterFollow a{
+  padding:2px 0 0 30px;
+  height:18px;
+  font-family:"Tahoma";
+  font-size:13px;
+  display:block;
+}
+#footer .btmFooter{
+  width:990px;
+  margin:0 auto;
+  font-family:'Tahoma';
+  font-size:13px;
+}
+#footer .footerNav{
+  color:#3c3d3d;
+}
+#footer .footerNav a{
+  color:#4bb5f8;
+  padding:0 5px;
+}
+#footer .footerTxt{
+  color:#989898 !important;
+  padding:21px 0 30px;
+}
+
+
+
+
+a.blackBtn{
+  background:transparent url("images/sprite.png") no-repeat 0 -1239px;
+}
+a.smallBtn{
+  background:transparent url("images/sprite.png") no-repeat 0 -1180px;
+  height:50px;
+}
+a.blackBtn, a.smallBtn{
+  color:#fff;
+  font-family:'Tahoma';
+  font-size:13px;
+  float:left;
+}
+a.blackBtn span{
+  background:transparent url("images/sprite.png") no-repeat right -965px;
+  display:block;
+  width:48px;
+  height:55px;
+}
+a.smallBtn span{
+  background:transparent url("images/sprite.png") no-repeat right -1131px;
+  display:block;
+  width:48px;
+  height:50px;
+}
+
+
+.page-bg-top { background:transparent url("images/page-bg-top.png") 0 0 no-repeat; width:990px; height:6px; float:left; display:block; }
+.page-bg-bottom { background:transparent url("images/page-bg-bottom.png") 0 0 no-repeat; width:990px; height:6px; float:left; display:block; }
+
+
+/*----- CSS for drop-down menus -----*/
+
+#head .bottomHeader ul li:hover a { color:#4bb5f8; }
+#head .bottomHeader ul li:hover ul { display:block; }
+
+#head .bottomHeader ul li a:hover { text-decoration:none; color:#4bb5f8; }
+#head .bottomHeader ul li { z-index:999; position:relative; }
+#head .bottomHeader ul li ul { position:absolute; width:220px; float:left; border:solid 1px #002643; border-top:none; background:#00417c; padding:3px 15px 0px; top:50px; left:2px; list-style:none; height:auto; display:none; }
+#head .bottomHeader ul li ul.first { width:150px; left:1px; }
+#head .bottomHeader ul li ul li { width:100%; float:left; border-top:solid 1px #4bb5f8; list-style:none; }
+#head .bottomHeader ul li ul li:first-child { border-top:none; }
+#head .bottomHeader ul li ul li a { width:100%; float:left; padding:10px 0px!important; background:none!important; text-align:left; font-size:14px; color:#4bb5f8; }
+#head .bottomHeader ul li ul li a:hover { text-decoration:none; color:#FFFFFF; }

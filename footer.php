@@ -8,6 +8,7 @@
 	</div><!-- end content -->
 			
 		</div><!--end main-->
+		<div class="page-bg-bottom"></div>
 		
 	</div><!-- end #top -->
 	
@@ -16,48 +17,77 @@
 </div><!-- end #wrapper -->
 
 <div class='wrapper' id='footerwrap'>
-      <div id='footer'>
-				<div class="box" style="width:640px; padding-bottom: 15px;">
-					
-					<h4>Clients Speak</h4>
-
-					<a href='http://www.norbauer.com'><img alt="Images" class="client" height="100" src="http://vinsol.com/blog/wp-content/uploads/2010/11/ryan_norbauer.jpg" width="75" /></a>
-					<div style="margin-bottom: 10px;"><span class="client_name"><a href='http://www.norbauer.com'>Ryan Norbauer</a></span>, <span class="client_about">Founder and Partner at Shy Hipster Networks . Hired Vinsol in 2007. </span></div>
-					<div class="client_speak">
-					<img alt="Quote-left" src="http://vinsol.com/blog/wp-content/uploads/2010/11/quote-left.png" style="padding-right: 5px;" />Working with Vinsol has been one of the most rewarding and productive collaborations I've ever had in the technology industry. Manik is an intelligent and honest engineer with a great faculty for open and clear communication, and his team include some of the swiftest and keenest developers I've ever had the pleasure to work with. They're great value for money, excellent people who are a joy to know and interact with, and above all they really know their stuff
-					<img alt="Quote-right" src="http://vinsol.com/blog/wp-content/uploads/2010/11/quote-right.png" style="padding-left: 5px;" />
-					</div>
-					
-				</div>
-        <div class="box box_custom_footer" style="float:right">
-
-          <a href="/contact" class="custom_button ie6fix rounded"><strong>Contact Form</strong><span>get in touch with us</span></a>
-					<br />
-          <ul class="social_bookmarks">
-            <li class='rss'>
-              <a class='ie6fix' href="http://feeds2.feedburner.com/Vinsol">RSS</a>
-            </li>
-            <li class='facebook'>
-
-              <a class='ie6fix' href="http://www.facebook.com/home.php?#!/pages/Vinsol/126480323491?ref=ts">Facebook</a>
-            </li>
-            <li class='twitter'>
-              <a class='ie6fix' href="http://www.twitter.com/the_vinsol">Twitter</a>
-            </li>
-          </ul>
+      <div id="footer">
+        <div class='cols'>
+          <div class="col">
+            <div class='title know'>
+              <span>Share the <span class='blue'>knowledge</span></span>
+            </div>
+            <hr/>
+            <div class='txt'>
+              <a href='#' class='txtTitle'>August Ruby Meet-up - Sencha Touch & ROR and WebSockets in HTML5</a>
+              <div class='txtBody'>
+                Welcome to Ni Dilli Meetup Group, your doorway to meet the Rubyists right here in New Delhi, India. We're a very open, fun and friendly meetup group and we have something...
+              </div>
+            </div>
+            <a href='#' class='smallBtn'>Read more<span>&nbsp;</span></a>
+          </div>
+        
+          <div class="col">
+            <div class='title clients'>
+              <span>Clients <span class='blue'>speak</span></span>
+            </div>
+            <hr/>
+            <div class='txt'>
+              <span class='clientImg'><img src='wp-content/themes/vinsol/images/icon.png'></span>
+              <span class='clientInfo'><a href='http://vinsol.com/testimonials'>Benny Hertach, Ofri.ch, Owner, Hired VinSol in February 2009 </a></span>
+              <div class='txtBody'>
+                Vinsol is one of the most professional companies I've worked with. They have intelligent, skilled top-notch engineers and designers who really understand their craft. After deciding for Vinsol,...
+              </div>
+            </div>
+            <a href='http://vinsol.com/testimonials' class='smallBtn'>Read more<span>&nbsp;</span></a>
+          </div>
+        
+          <div class="col">
+            <div class='title twitter'>
+              <span>Vinsol on <span class='blue'>Twitter</span></span>
+            </div>
+            <hr/>
+            <div class='txt'>
+              <div class='tweetTxt'>
+                We are organizing another round of ruby meetup on 27th August i.e. Saturday for passionate and enthusiast... <a href='#'>http://t.co/KQFYDHe</a>
+                <div class='tweetBy'>
+                  <span>by the_vinsol 17 Aug</span>
+                </div>
+              </div>
+              <div class='tweetTxt'>
+                We are organizing another round of ruby meetup on 27th August i.e. Saturday for passionate and enthusiast... <a href='#'>http://t.co/KQFYDHe</a>
+                <div class='tweetBy'>
+                  <span>by the_vinsol 17 Aug</span>
+                </div>
+              </div>
+            </div>
+            <span class='twitterFollow'><a href='http://www.twitter.com/the_vinsol'>Follow us on Twitter</a></span>
+          </div>
+        
         </div>
-				<div class="bottom_nav" style="width:940px; position: relative; float:right; padding-bottom: 10px;">
-
-					<ul id="bottomnav">
-						<li><a href="/">Home</a></li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/portfolio">Portfolio</a></li>
-						<li><a href="/team">Team</a></li>
-						<li><a href="/careers">Careers</a></li>
-
-						<li><a href="/contact">Contact</a></li>
-					</ul>
-				</div>
+        <div class='btmFooter'>
+          <div class='footerNav'>
+            <a href='http://vinsol.com/'>Home</a> | 
+            <a href='http://vinsol.com/about'>About Us</a> | 
+            <a href='http://vinsol.com/our_services'>Our Services</a> | 
+            <a href='http://vinsol.com/portfolio'>Portfolio</a> | 
+            <a href='http://vinsol.com/testimonials'>Testimonials</a> | 
+            <a href='http://vinsol.com/careers'>Careers</a> | 
+            <a href='http://vinsol.com/blog'>Blog</a> | 
+            <a href='http://vinsol.com/contact'>Contact Us</a> | 
+            <a href='sitemap'>Sitemap</a>
+          </div>
+          <div class='footerTxt'>
+            Copyright &#xA9; 2000-2012 VinSol.com. All rights reserved<br/>
+            Reproduction in whole or any form without express written permission is prohibited.
+          </div>
+        </div>
       </div>
       <!--end footer-->
     </div>
