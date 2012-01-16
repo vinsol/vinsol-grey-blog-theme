@@ -1411,7 +1411,7 @@ border-bottom:none;
   float:left;
   color:#fff;
   font-size: 18px;
-  padding:14px 26px;
+  padding:14px 26px 13px 26px;
   text-align:center;
 }
 #head .bottomHeader ul li a{
@@ -1479,7 +1479,7 @@ border-bottom:none;
 #footer .col .txt{
   font-family:'Tahoma';
   margin-top:13px;
-  min-height:130px;
+  min-height:150px;
 }
 #footer .col .txt a.txtTitle{
   color:#4bb5f8;
@@ -1494,20 +1494,25 @@ border-bottom:none;
   color:#4bb5f8;
 }
 #footer .col a.smallBtn{
-  width:70px;
-  margin-top:27px;
-  height:21px;
-  padding:0px 6px 0px 16px;
-  height:50px;
-  font-size:13px;
-  color:#FFFFFF;
-  line-height:51px;
-  font-weight:bold;
+  margin-top:20px;
+  background:transparent url("images/black-blue-buttons.png") no-repeat 0 0;
+  float:left;
+  padding-left:24px;
 }
-#footer .col a.smallBtn span{
-  left:73px;
-  position:relative;
-  top:-49px;
+#footer .col a.smallBtn strong{
+	background:transparent url("images/black-blue-buttons.png") no-repeat right -50px;
+	float:left;
+	height:50px;
+	line-height:50px;
+	padding-right:60px;
+}
+#footer .col a.smallBtn:hover{
+  background:transparent url("images/black-blue-buttons.png") no-repeat 0 -100px;
+  text-decoration:none;
+}
+#footer .col a.smallBtn:hover strong{
+  background:transparent url("images/black-blue-buttons.png") no-repeat right -150px;
+  cursor:pointer;
 }
 #footer .col .txt span.clientImg{
   float:left;
@@ -1519,6 +1524,7 @@ border-bottom:none;
   left:6px;
   top:-2px;
   width: 283px;
+  height:41px;
 }
 #footer .col .txt span.clientInfo a{
   color:#fff;

@@ -25,12 +25,12 @@
             </div>
             <hr/>
             <div class='txt'>
-              <a href='#' class='txtTitle'>August Ruby Meet-up - Sencha Touch & ROR and WebSockets in HTML5</a>
+              <a href='http://www.meetup.com/delhi-ruby/events/29812591/' target="_blank" class='txtTitle'>August Ruby Meet-up - Sencha Touch & ROR and WebSockets in HTML5</a>
               <div class='txtBody'>
                 Welcome to Ni Dilli Meetup Group, your doorway to meet the Rubyists right here in New Delhi, India. We're a very open, fun and friendly meetup group and we have something...
               </div>
             </div>
-            <a href='#' class='smallBtn'>Read more<span>&nbsp;</span></a>
+            <a href='http://www.meetup.com/delhi-ruby/events/29812591/' target="_blank" class='smallBtn'><strong>Read More</strong></a>
           </div>
         
           <div class="col">
@@ -45,7 +45,7 @@
                 Vinsol is one of the most professional companies I've worked with. They have intelligent, skilled top-notch engineers and designers who really understand their craft. After deciding for Vinsol,...
               </div>
             </div>
-            <a href='http://vinsol.com/testimonials' class='smallBtn'>Read more<span>&nbsp;</span></a>
+            <a href='http://vinsol.com/testimonials' class='smallBtn'><strong>Read More</strong></a>
           </div>
         
           <div class="col">
