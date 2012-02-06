@@ -75,13 +75,13 @@
           <div class='footerNav'>
             <a href='http://vinsol.com/'>Home</a> | 
             <a href='http://vinsol.com/about'>About Us</a> | 
-            <a href='http://vinsol.com/our_services'>Our Services</a> | 
+            <a href='http://vinsol.com/Our_Services'>Our Services</a> | 
             <a href='http://vinsol.com/portfolio'>Portfolio</a> | 
             <a href='http://vinsol.com/testimonials'>Testimonials</a> | 
             <a href='http://vinsol.com/careers'>Careers</a> | 
             <a href='http://vinsol.com/blog'>Blog</a> | 
             <a href='http://vinsol.com/contact'>Contact Us</a> | 
-            <a href='sitemap'>Sitemap</a>
+            <a href='http://vinsol.com/sitemap'>Sitemap</a>
           </div>
           <div class='footerTxt'>
             Copyright &#xA9; 2000-2012 VinSol.com. All rights reserved<br/>

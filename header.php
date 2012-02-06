@@ -47,7 +47,7 @@
 							<li><a href="http://vinsol.com/team">Our Team</a></li>
 						</ul>
 					  </li>
-					  <li><a href='http://vinsol.com/our_services'>Our Services</a>
+					  <li><a href='http://vinsol.com/Our_Services'>Our Services</a>
 					  	<ul>
 							<li><a href="http://vinsol.com/ruby-on-rails-consulting">RoR Development &amp; Consulting</a></li>
 							<li><a href="http://vinsol.com/iphone-development">iPhone Development &amp; Consulting</a></li>
