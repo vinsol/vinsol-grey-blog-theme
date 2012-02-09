@@ -31,7 +31,7 @@
 						<a href='http://www.twitter.com/the_vinsol' class='twitter'></a>
 					  </div>
 					  <div class="contactInfo">
-						<span class='contactLabel'>Email us at: <a href="mailto:sales@vinsol.com" class='contactVal'>sales@vinsol.com</span></span>
+						<span class='contactLabel'>Email us at: <a href="mailto:sales@vinsol.com" class='contactVal'>sales@vinsol.com</a></span>
 						<span class='contactLabel'>Skype: <span class='contactVal'>Vinsol</span></span>
 					  </div>
 					</div>

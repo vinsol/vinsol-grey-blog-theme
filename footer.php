@@ -39,7 +39,7 @@
             </div>
             <hr/>
             <div class='txt'>
-              <span class='clientImg'><img src='wp-content/themes/vinsol/images/icon.png'></span>
+              <span class='clientImg'><img src='wp-content/themes/vinsol/images/client.png' width="31" height="41"></span>
               <span class='clientInfo'><a href='http://vinsol.com/testimonials'>Benny Hertach, Ofri.ch, Owner, Hired VinSol in February 2009 </a></span>
               <div class='txtBody'>
                 Vinsol is one of the most professional companies I've worked with. They have intelligent, skilled top-notch engineers and designers who really understand their craft. After deciding for Vinsol,...
