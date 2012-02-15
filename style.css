@@ -1515,7 +1515,10 @@ border-bottom:none;
   cursor:pointer;
 }
 #footer .col .txt span.clientImg{
-  float:left;
+	float:left;
+	background:transparent url("images/client-small.png") no-repeat 0 0;
+	width:31px;
+	height:41px;
 }
 #footer .col .txt span.clientInfo{
   display:block;
