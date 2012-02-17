@@ -54,7 +54,8 @@
             </div>
             <hr/>
             <div class='txt'>
-              <div class='tweetTxt'>
+            	<div id="jTweets"></div>
+              <!--<div class='tweetTxt'>
                 We are organizing another round of ruby meetup on 27th August i.e. Saturday for passionate and enthusiast... <a href='#'>http://t.co/KQFYDHe</a>
                 <div class='tweetBy'>
                   <span>by the_vinsol 17 Aug</span>
@@ -65,7 +66,7 @@
                 <div class='tweetBy'>
                   <span>by the_vinsol 17 Aug</span>
                 </div>
-              </div>
+              </div>-->
             </div>
             <span class='twitterFollow'><a href='http://www.twitter.com/the_vinsol'>Follow us on Twitter</a></span>
           </div>
@@ -95,5 +96,10 @@
 <?php wp_footer(); ?>
 
 
+<script type="text/javascript">
+  $('#jTweets').jTweetsAnywhere({
+      searchParams: 'q=the_vinsol'
+  });
+</script>
 </body>
 </html>

@@ -1620,3 +1620,36 @@ a.smallBtn span{
 #head .bottomHeader ul li ul li:first-child { border-top:none; }
 #head .bottomHeader ul li ul li a { width:100%; float:left; padding:10px 0px!important; background:none!important; text-align:left; font-size:14px; color:#4bb5f8; }
 #head .bottomHeader ul li ul li a:hover { text-decoration:none; color:#FFFFFF; }
+
+
+
+/*----- Twitter Widget -----*/
+#jTweets{
+  color:#989898;
+  font-family: 'Tahoma';
+  margin-top: 13px;
+  min-height: 130px;
+}
+#jTweets a{
+  color:#4bb5f8;
+}
+.jta-tweet-profile-image, .jta-tweet-user-name{
+  display:none;
+}
+.jta-tweet-attributes{
+  float: right;
+  padding: 10px 0;
+	text-align:right;
+	width:100%;
+	font-size:11px;
+}
+.jta-tweet-attributes a { font-size:11px; }
+li.jta-tweet-list-item{
+  border-bottom: 1px dotted #989898;
+  text-align: justify;
+  font-size: 13px;
+  margin-top: 13px;
+  overflow: hidden;
+}
+.jta-tweet-body { overflow:hidden; }
+.jta-clear { clear:both; height:2px; overflow:hidden; }
