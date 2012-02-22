@@ -33,7 +33,8 @@ margin:0 auto;
 
 #head{
 z-index: 5;
-margin-bottom:20px;
+margin:20px 0px;
+overflow:hidden;
 }
 
 #top .logo, .logo a{
@@ -42,7 +43,7 @@ height:90px;
 width:210px;
 position:absolute;
 left:0px;
-top:13px;
+top:0px;
 border: none;
 padding: 0;
 margin:0;
@@ -1373,6 +1374,9 @@ border-bottom:none;
 }
 #head .socialLinks a.twitter{
   background:transparent url("images/sprite.png") no-repeat 1px -147px;
+}
+#head .socialLinks a.mail{
+  background:transparent url("images/sprite.png") no-repeat 0px -2901px;
 }
 #head .contactInfo{
   float:right;

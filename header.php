@@ -12,8 +12,8 @@
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-        <script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="jtweet.js"></script>
+        <script type="text/javascript" src="http://vinsol.com/blog/jquery.js"></script>
+		<script type="text/javascript" src="http://vinsol.com/blog/jtweet.js"></script>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 		<?php wp_head(); ?>
@@ -31,11 +31,12 @@
 						<a href='http://feeds2.feedburner.com/Vinsol' class='rss'>&nbsp;</a>
 						<a href='https://www.facebook.com/thevinsol' class='fb'></a>
 						<a href='http://www.twitter.com/the_vinsol' class='twitter'></a>
+                        <a href='mailto:sales@vinsol.com' class='mail'></a>
 					  </div>
-					  <div class="contactInfo">
+					  <!--<div class="contactInfo">
 						<span class='contactLabel'>Email us at: <a href="mailto:sales@vinsol.com" class='contactVal'>sales@vinsol.com</a></span>
 						<span class='contactLabel'>Skype: <span class='contactVal'>Vinsol</span></span>
-					  </div>
+					  </div>-->
 					</div>
 					<div class='clear'></div>
 				</div>
