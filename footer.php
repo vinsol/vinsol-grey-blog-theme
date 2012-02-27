@@ -38,7 +38,7 @@
               <span>Clients <span class='blue'>speak</span></span>
             </div>
             <hr/>
-            <div class='txt'>
+     		<div class='txt'>
               <span class='clientImg'></span>
               <span class='clientInfo'><a href='http://vinsol.com/testimonials'>Benny Hertach, Ofri.ch, Owner, Hired VinSol in February 2009 </a></span>
               <div class='txtBody'>
