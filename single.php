@@ -19,7 +19,7 @@ get_header(); ?>
 	  		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 	  		<div class='post_data'>
 	    	  <span class='categories'> <?php the_category(', ') ?></span>
-	    		<span class='author'>posted by <?php the_author() ?></span>
+	    		<span class='author'>posted by <a href="?author=<?php the_author_ID(); ?>"><?php the_author() ?></a></span>
 	    	</div><!--end post data-->
 	  		<?php the_content('Read more'); ?>
 	  		

@@ -1657,3 +1657,51 @@ li.jta-tweet-list-item{
 }
 .jta-tweet-body { overflow:hidden; }
 .jta-clear { clear:both; height:2px; overflow:hidden; }
+
+
+
+
+/*---- 404 Error CSS -----*/
+body.error404{
+	background:transparent url("images/bg-new.png") repeat 0 0;
+	font-family:Tahoma, Arial;
+	font-size:13px;
+}
+#wrapper404{
+  width:990px;
+  margin:0 auto;
+}
+#header404{
+  height:145px;
+  padding-top:15px;
+  font-family:"Trebuchet MS";
+}
+#header404 h1.logo{
+  float:left;
+  width:192px;
+  height:62px;
+  background:transparent url("images/sprite.png") no-repeat 0 0;
+}
+#header404 h1.logo a{
+  float:left;
+  width:192px;
+  height:66px;
+}
+
+
+.message-section404 { width:100%; min-height:320px; overflow:hidden; margin-top:20px; position:relative; }
+.message-section404 .image-box { width:417px; height:316px; position:absolute; top:0px; left:10px; float:left; background:transparent url('images/iphone404.png') 0 0 no-repeat; }
+.message-section404 .text-section { overflow:hidden; padding:20px 0px 0px 280px; }
+.message-section404 .text-section .heading { font-family:Arial, Helvetica, sans-serif; font-size:45px; color:#000; }
+.message-section404 .text-section .heading .indent-text { margin-left:110px; }
+.message-section404 .text-section .heading .red-text { color:#ed1c24; }
+.message-section404 .text-section .message-text { font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:50px 0px 0px 170px; }
+
+.links-section404 { width:100%; overflow:hidden; margin-top:55px; position:relative; }
+.links-section404 a.home { background:transparent url('images/links404.png') 0 0 no-repeat; float:left; width:144px; height:44px; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; text-decoration:none; text-align:center; padding-top:100px; margin-left:60px; }
+.links-section404 a.blog { background:transparent url('images/links404.png') 0 -144px no-repeat; float:left; width:144px; height:44px; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; text-decoration:none; text-align:center; padding-top:100px; margin-left:30px; }
+.links-section404 a.portfolio { background:transparent url('images/links404.png') 0 -288px no-repeat; float:left; width:144px; height:44px; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; text-decoration:none; text-align:center; padding-top:100px; margin-left:30px; }
+.links-section404 a.careers { background:transparent url('images/links404.png') 0 -432px no-repeat; float:left; width:144px; height:44px; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; text-decoration:none; text-align:center; padding-top:100px; margin-left:30px; }
+.links-section404 a.contact { background:transparent url('images/links404.png') 0 -576px no-repeat; float:left; width:144px; height:44px; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; text-decoration:none; text-align:center; padding-top:100px; margin-left:30px; }
+
+.links-section404 a:hover { color:#ed1c24; text-decoration:none; }
