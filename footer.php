@@ -54,19 +54,40 @@
             </div>
             <hr/>
             <div class='txt'>
-            	<div id="jTweets"></div>
-              <!--<div class='tweetTxt'>
-                We are organizing another round of ruby meetup on 27th August i.e. Saturday for passionate and enthusiast... <a href='#'>http://t.co/KQFYDHe</a>
-                <div class='tweetBy'>
-                  <span>by the_vinsol 17 Aug</span>
-                </div>
-              </div>
-              <div class='tweetTxt'>
-                We are organizing another round of ruby meetup on 27th August i.e. Saturday for passionate and enthusiast... <a href='#'>http://t.co/KQFYDHe</a>
-                <div class='tweetBy'>
-                  <span>by the_vinsol 17 Aug</span>
-                </div>
-              </div>-->
+            	<!--<div id="jTweets"></div>-->
+                
+                <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+                      new TWTR.Widget({
+                        version: 2,
+                        type: 'search',
+                        search: 'from:the_vinsol OR @the_vinsol',
+                        interval: 30000,
+                        title: '',
+                        subject: '',
+                        width: 310,
+                        height: 165,
+                        theme: {
+                          shell: {
+                            background: '#000000',
+                            color: '#ffffff'
+                          },
+                          tweets: {
+                            background: '#000000',
+                            color: '#989898',
+                            links: '#4bb6f8'
+                          }
+                        },
+                        features: {
+                          scrollbar: false,
+                          loop: true,
+                          live: true,
+                          behavior: 'default'
+                        }
+                      }).render().start();
+                    </script>
+                
+                
             </div>
             <span class='twitterFollow'><a href='http://www.twitter.com/the_vinsol'>Follow us on Twitter</a></span>
           </div>
