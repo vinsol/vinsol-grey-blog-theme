@@ -1712,5 +1712,5 @@ body.error404{
 .twtr-hd, .twtr-avatar, .twtr-ft { display:none!important; }
 #twtr-widget-1 .twtr-tweet-text { margin-left:0px!important; }
 .twtr-widget .twtr-tweet-wrap { padding:12px 0px!important; }
-.twtr-widget .twtr-tweet { border-bottom:dotted 1px #ffffff!important; }
+.twtr-widget .twtr-tweet { border-bottom:dotted 1px #ffffff!important; height:85px!important; }
 .twtr-tweets { position:relative; top:-12px; }
