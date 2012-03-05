@@ -43,11 +43,11 @@ html {
   </div>
   
   <div class="links-section404">
-    <a href="http://vinsol.com/" class="home">Home</a>
-    <a href="http://vinsol.com/blog" class="blog">Blog</a>
-    <a href="http://vinsol.com/portfolio" class="portfolio">Portfolio</a>
-    <a href="http://vinsol.com/careers" class="careers">Careers</a>
-    <a href="http://vinsol.com/contact" class="contact">Contact</a>
+    <a href="/" class="home">Home</a>
+    <a href="/blog" class="blog">Blog</a>
+    <a href="/portfolio" class="portfolio">Portfolio</a>
+    <a href="/careers" class="careers">Careers</a>
+    <a href="/contact" class="contact">Contact</a>
   </div>
 </div>
 </body>
