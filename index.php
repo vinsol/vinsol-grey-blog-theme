@@ -4,6 +4,8 @@
  * @subpackage Starkers
  */
 
+require_once('Meetup-API-client-for-PHP/Meetup.php');
+
 get_header(); ?>
 
 <div id="content">
