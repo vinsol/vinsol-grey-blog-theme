@@ -24,13 +24,17 @@
               <span>Share the <span class='blue'>knowledge</span></span>
             </div>
             <hr/>
+            <?php
+            	$m = new MeetupEvents();
+				$events = $m->getEvents( array( 'group_urlname' => 'delhi-ruby', 'group_id' => "527930", 'status' => 'past,upcoming', 'page' => 1, 'order' => 'time', 'desc' => 'true' ) );				
+			?>
             <div class='txt'>
-              <a href='http://www.meetup.com/delhi-ruby/events/29812591/' target="_blank" class='txtTitle'>August Ruby Meet-up - Sencha Touch & ROR and WebSockets in HTML5</a>
+              <a href='<?php echo $events[0]['event_url']; ?>' target="_blank" class='txtTitle'><?php echo substr($events[0]['name'],0,60); ?>...</a>
               <div class='txtBody'>
-                Welcome to Ni Dilli Meetup Group, your doorway to meet the Rubyists right here in New Delhi, India. We're a very open, fun and friendly meetup group and we have something...
+                <?php echo substr($events[0]['description'],0,180); ?>...
               </div>
             </div>
-            <a href='http://www.meetup.com/delhi-ruby/events/29812591/' target="_blank" class='smallBtn'><strong>Read More</strong></a>
+            <a href='<?php echo $events[0]['event_url']; ?>' target="_blank" class='smallBtn'><strong>Read More</strong></a>
           </div>
         
           <div class="col">
@@ -56,8 +60,8 @@
             <div class='txt'>
             	<!--<div id="jTweets"></div>-->
                 
-                <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-					<script>
+                <script type="text/javascript" charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script type="text/javascript">
                       new TWTR.Widget({
                         version: 2,
                         type: 'search',
