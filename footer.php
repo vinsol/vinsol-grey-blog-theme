@@ -38,7 +38,7 @@
 				$n =  rand(0,sizeof($testimonials)-1);
 			?>
      		<div class='txt'>
-              <span class='clientImg'></span>
+              <span class='clientImg'><img src="<?php echo $testimonials[$n]->client_pic; ?>" /></span>
               <span class='clientInfo'><a href='http://vinsol.com/testimonials'><?php echo $testimonials[$n]->client_name; ?>, <?php echo $testimonials[$n]->client_company; ?> </a></span>
               <div class='txtBody'>
                 <?php echo substr($testimonials[$n]->testimonial,0,180); ?>...
