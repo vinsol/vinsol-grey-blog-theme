@@ -24,17 +24,7 @@
               <span>Share the <span class='blue'>knowledge</span></span>
             </div>
             <hr/>
-            <?php
-            	$m = new MeetupEvents();
-				$events = $m->getEvents( array( 'group_urlname' => 'delhi-ruby', 'group_id' => "527930", 'status' => 'past,upcoming', 'page' => 1, 'order' => 'time', 'desc' => 'true' ) );				
-			?>
-            <div class='txt'>
-              <a href='<?php echo $events[0]['event_url']; ?>' target="_blank" class='txtTitle'><?php echo substr($events[0]['name'],0,60); ?>...</a>
-              <div class='txtBody'>
-                <?php echo substr($events[0]['description'],0,180); ?>...
-              </div>
-            </div>
-            <a href='<?php echo $events[0]['event_url']; ?>' target="_blank" class='smallBtn'><strong>Read More</strong></a>
+            
           </div>
         
           <div class="col">
@@ -42,11 +32,16 @@
               <span>Clients <span class='blue'>speak</span></span>
             </div>
             <hr/>
+            <?php
+            	$query = "SELECT * FROM wp_ltw_testimonials";
+				$testimonials = $wpdb->get_results($query);
+				$n =  rand(0,sizeof($testimonials)-1);
+			?>
      		<div class='txt'>
               <span class='clientImg'></span>
-              <span class='clientInfo'><a href='http://vinsol.com/testimonials'>Benny Hertach, Ofri.ch, Owner, Hired VinSol in February 2009 </a></span>
+              <span class='clientInfo'><a href='http://vinsol.com/testimonials'><?php echo $testimonials[$n]->client_name; ?>, <?php echo $testimonials[$n]->client_company; ?> </a></span>
               <div class='txtBody'>
-                Vinsol is one of the most professional companies I've worked with. They have intelligent, skilled top-notch engineers and designers who really understand their craft. After deciding for Vinsol,...
+                <?php echo substr($testimonials[$n]->testimonial,0,180); ?>...
               </div>
             </div>
             <a href='http://vinsol.com/testimonials' class='smallBtn'><strong>Read More</strong></a>
@@ -58,7 +53,6 @@
             </div>
             <hr/>
             <div class='txt'>
-            	<!--<div id="jTweets"></div>-->
                 
                 <script type="text/javascript" charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 					<script type="text/javascript">
@@ -118,13 +112,29 @@
       <!--end footer-->
     </div>
 
+<script type="text/javascript">
+	
+  
+  $(document).ready( function(){
+	var url = 'http://api.meetup.com/2/events/?key=6c44664169336b58137f403044148&group_urlname=delhi-ruby&group_id=527930&status=upcoming&page=1&order=time&desc=true';
+			
+	$.ajax(
+		   { 'url' :url,
+			 'type' : 'GET',
+			 'dataType' : 'jsonp',
+			 'success' : function(data){
+			    var newHTML = "<div class='txt'>" +
+  				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='txtTitle'>" + 
+				data.results[0]['name'].substring(0,60)+"...</a>"
+  				+ "<div class='txtBody'>"+ data.results[0]['description'].substring(0,180)+"...</div></div>" +
+				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
+																																																					  				$(newHTML).appendTo('.cols .col:first');
+						   }
+			});
+	});
+  </script>
+
 <?php wp_footer(); ?>
 
-
-<script type="text/javascript">
-  $('#jTweets').jTweetsAnywhere({
-      searchParams: 'q=the_vinsol'
-  });
-</script>
 </body>
 </html>
