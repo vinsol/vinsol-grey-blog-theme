@@ -37,12 +37,17 @@
 				$testimonials = $wpdb->get_results($query);
 				$n =  rand(0,sizeof($testimonials)-1);
 			?>
-     		<div class='txt'>
-              <span class='clientImg'><img src="<?php echo $testimonials[$n]->client_pic; ?>" /></span>
-              <span class='clientInfo'><a href='http://vinsol.com/testimonials'><?php echo $testimonials[$n]->client_name; ?>, <?php echo $testimonials[$n]->client_company; ?> </a></span>
+     		<!--<div class='txt'>
+              <span class='clientImg'><img src="<?php// echo $testimonials[$n]->client_pic; ?>" /></span>
+              <span class='clientInfo'><a href='http://vinsol.com/testimonials'><?php// echo $testimonials[$n]->client_name; ?>, <?php// echo $testimonials[$n]->client_company; ?> </a></span>
               <div class='txtBody'>
-                <?php echo substr($testimonials[$n]->testimonial,0,180); ?>...
+                <?php// echo substr($testimonials[$n]->testimonial,0,180); ?>...
               </div>
+            </div>-->
+            <div class='txt'>
+              <span class='clientImg'></span>
+              <span class='clientInfo'><a href='http://vinsol.com/testimonials'>Ian Jones, Owner of Web Store and Property Video. Hired Vinsol in 2009.</span>
+              <div class='txtBody'>Unsure what to do, a friend suggested that I should look at Ruby on Rails as a fast and cost effective means to get my web idea built. I then starting looking through loads of free...</div>
             </div>
             <a href='http://vinsol.com/testimonials' class='smallBtn'><strong>Read More</strong></a>
           </div>
