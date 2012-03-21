@@ -1519,7 +1519,7 @@ border-bottom:none;
 }
 #footer .col .txt span.clientImg{
 	float:left;
-	background:transparent url("images/client-small.png") no-repeat 0 0;
+	background:transparent url("images/clientImg.png") no-repeat 0 0;
 	width:31px;
 	height:41px;
 }
