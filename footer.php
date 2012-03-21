@@ -32,24 +32,7 @@
               <span>Clients <span class='blue'>speak</span></span>
             </div>
             <hr/>
-            <?php
-            	$query = "SELECT * FROM wp_ltw_testimonials";
-				$testimonials = $wpdb->get_results($query);
-				$n =  rand(0,sizeof($testimonials)-1);
-			?>
-     		<!--<div class='txt'>
-              <span class='clientImg'><img src="<?php// echo $testimonials[$n]->client_pic; ?>" /></span>
-              <span class='clientInfo'><a href='http://vinsol.com/testimonials'><?php// echo $testimonials[$n]->client_name; ?>, <?php// echo $testimonials[$n]->client_company; ?> </a></span>
-              <div class='txtBody'>
-                <?php// echo substr($testimonials[$n]->testimonial,0,180); ?>...
-              </div>
-            </div>-->
-            <div class='txt'>
-              <span class='clientImg'></span>
-              <span class='clientInfo'><a href='http://vinsol.com/testimonials'>Ian Jones, Owner of Web Store and Property Video. Hired Vinsol in 2009.</span>
-              <div class='txtBody'>Unsure what to do, a friend suggested that I should look at Ruby on Rails as a fast and cost effective means to get my web idea built. I then starting looking through loads of free...</div>
-            </div>
-            <a href='http://vinsol.com/testimonials' class='smallBtn'><strong>Read More</strong></a>
+            
           </div>
         
           <div class="col">
@@ -117,27 +100,47 @@
       <!--end footer-->
     </div>
 
-<script type="text/javascript">
-	
-  
-  $(document).ready( function(){
-	var url = 'http://api.meetup.com/2/events/?key=6c44664169336b58137f403044148&group_urlname=delhi-ruby&group_id=527930&status=upcoming&page=1&order=time&desc=true';
-			
-	$.ajax(
-		   { 'url' :url,
-			 'type' : 'GET',
-			 'dataType' : 'jsonp',
-			 'success' : function(data){
-			    var newHTML = "<div class='txt'>" +
-  				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='txtTitle'>" + 
-				data.results[0]['name'].substring(0,60)+"...</a>"
-  				+ "<div class='txtBody'>"+ data.results[0]['description'].substring(0,180)+"...</div></div>" +
-				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
-																																																					  				$(newHTML).appendTo('.cols .col:first');
-						   }
-			});
-	});
-  </script>
+    <script type="text/javascript">
+
+
+      $(document).ready( function(){
+
+    	var testimonialUrl = 'http://vinsol.com/testimonials';
+    		$.ajax(
+    			   { 'url' : testimonialUrl,
+    				 'type' : 'GET',
+    				 'data' : { 'format' : 'json'},
+    				 'dataType' : 'json',
+    				 'success' : function(data){
+    					 console.log(data);
+    					var newHTML = "<div class='txt'>" +
+    					"<span class='clientImg'><img src='"+data[0].testimonial.avatar_file_name+"'/></span>" + 
+    					"<span class='clientInfo'><a href='http://vinsol.com/testimonials'>"+data[0].testimonial.fullname+", "+data[0].testimonial.about+"</a></span>"
+    					+ "<div class='txtBody'>"+ data[0].testimonial.comments.substring(0,180)+"...</div></div>" +
+    					"<a href='http://vinsol.com/testimonials' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
+    																																																										$(newHTML).appendTo('.cols .col:first').next();
+    							   }
+    				});
+
+    	/*var url = 'http://api.meetup.com/2/events/?key=6c44664169336b58137f403044148&group_urlname=delhi-ruby&group_id=527930&status=upcoming&page=1&order=time&desc=true';
+
+    	$.ajax(
+    		   { 'url' :url,
+    			 'type' : 'GET',
+    			 'dataType' : 'jsonp',
+    			 'success' : function(data){
+    			    var newHTML = "<div class='txt'>" +
+      				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='txtTitle'>" + 
+    				data.results[0]['name'].substring(0,60)+"...</a>"
+      				+ "<div class='txtBody'>"+ data.results[0]['description'].substring(0,180)+"...</div></div>" +
+    				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
+    																																																					  				$(newHTML).appendTo('.cols .col:first');
+    						   }
+    			});*/
+
+
+    		});
+      </script>
 
 <?php wp_footer(); ?>
 
