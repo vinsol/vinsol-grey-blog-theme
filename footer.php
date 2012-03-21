@@ -112,14 +112,14 @@
     				 'data' : { 'format' : 'json'},
     				 'dataType' : 'json',
     				 'success' : function(data){
-    					 console.log(data);
-    					var newHTML = "<div class='txt'>" +
-    					"<span class='clientImg'><img src='"+data[0].testimonial.avatar_file_name+"'/></span>" + 
-    					"<span class='clientInfo'><a href='http://vinsol.com/testimonials'>"+data[0].testimonial.fullname+", "+data[0].testimonial.about+"</a></span>"
-    					+ "<div class='txtBody'>"+ data[0].testimonial.comments.substring(0,180)+"...</div></div>" +
-    					"<a href='http://vinsol.com/testimonials' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
-    																																																										$(newHTML).appendTo('.cols .col:first').next();
-    							   }
+    				   var id = Math.floor(Math.random()*(data.length-1));
+    					 var newHTML = "<div class='txt'>" +
+    					  "<span class='clientImg'><img src='system/avatars/"+data[id].testimonial.id+"/small/"+data[id].testimonial.avatar_file_name+"'/></span>" + 
+    					  "<span class='clientInfo'><a href='http://vinsol.com/testimonials'>"+data[id].testimonial.fullname+", "+data[0].testimonial.about+"</a></span>"
+    					  + "<div class='txtBody'>"+ data[id].testimonial.comments.substring(0,180)+"...</div></div>" +
+    					  "<a href='http://vinsol.com/testimonials' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
+    					  $('.cols .col:first').next().append(newHTML);
+    					}
     				});
 
     	/*var url = 'http://api.meetup.com/2/events/?key=6c44664169336b58137f403044148&group_urlname=delhi-ruby&group_id=527930&status=upcoming&page=1&order=time&desc=true';
