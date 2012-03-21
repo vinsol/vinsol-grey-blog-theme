@@ -114,7 +114,7 @@
     				 'success' : function(data){
     				   var id = Math.floor(Math.random()*(data.length-1));
     					 var newHTML = "<div class='txt'>" +
-    					  "<span class='clientImg'><img src='system/avatars/"+data[id].testimonial.id+"/small/"+data[id].testimonial.avatar_file_name+"'/></span>" + 
+    					  "<span class='clientImg'><img src='../system/avatars/"+data[id].testimonial.id+"/small/"+data[id].testimonial.avatar_file_name+"'/></span>" + 
     					  "<span class='clientInfo'><a href='http://vinsol.com/testimonials'>"+data[id].testimonial.fullname+", "+data[0].testimonial.about+"</a></span>"
     					  + "<div class='txtBody'>"+ data[id].testimonial.comments.substring(0,180)+"...</div></div>" +
     					  "<a href='http://vinsol.com/testimonials' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
