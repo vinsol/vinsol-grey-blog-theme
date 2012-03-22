@@ -24,7 +24,14 @@
               <span>Share the <span class='blue'>knowledge</span></span>
             </div>
             <hr/>
-            
+            <div class="txt">
+              <a href="http://www.meetup.com/delhi-ruby/events/55020552/" class="txtTitle" target="blank">Ruby Meetup: PUT PATCH REST and Rails &amp; Backbone Screencasts ...</a>
+              <div class="txtBody">
+                I) Workshop 1 - PUT PATCH REST and Rails We will be discussing what is wrong with current implementation of PUT HTTP verb in Rails. How PATCH handles it and the future of PUT in Rails.
+                II) Workshop 2 - Viewing of Backbone Screencasts (Part 1 and 2...
+              </div>
+            </div>
+            <a href="http://www.meetup.com/delhi-ruby/events/55020552/" class="smallBtn" target="_blank"><strong>Read more</strong></a>
           </div>
         
           <div class="col">
@@ -115,7 +122,7 @@
     				   var id = Math.floor(Math.random()*(data.length-1));
     					 var newHTML = "<div class='txt'>" +
     					  "<span class='clientImg'><img src='../system/avatars/"+data[id].testimonial.id+"/small/"+data[id].testimonial.avatar_file_name+"'/></span>" + 
-    					  "<span class='clientInfo'><a href='http://vinsol.com/testimonials'>"+data[id].testimonial.fullname+", "+data[0].testimonial.about+"</a></span>"
+    					  "<span class='clientInfo'><a href='http://vinsol.com/testimonials'>"+data[id].testimonial.fullname+", "+data[id].testimonial.about+"</a></span>"
     					  + "<div class='txtBody'>"+ data[id].testimonial.comments.substring(0,180)+"...</div></div>" +
     					  "<a href='http://vinsol.com/testimonials' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
     					  $('.cols .col:first').next().append(newHTML);
