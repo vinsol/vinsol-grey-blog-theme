@@ -24,14 +24,7 @@
               <span>Share the <span class='blue'>knowledge</span></span>
             </div>
             <hr/>
-            <div class="txt">
-              <a href="http://www.meetup.com/delhi-ruby/events/55020552/" class="txtTitle" target="blank">Ruby Meetup: PUT PATCH REST and Rails &amp; Backbone Screencasts ...</a>
-              <div class="txtBody">
-                I) Workshop 1 - PUT PATCH REST and Rails We will be discussing what is wrong with current implementation of PUT HTTP verb in Rails. How PATCH handles it and the future of PUT in Rails.
-                II) Workshop 2 - Viewing of Backbone Screencasts (Part 1 and 2...
-              </div>
-            </div>
-            <a href="http://www.meetup.com/delhi-ruby/events/55020552/" class="smallBtn" target="_blank"><strong>Read more</strong></a>
+            
           </div>
         
           <div class="col">
@@ -129,7 +122,7 @@
     					}
     				});
 
-    	/*var url = 'http://api.meetup.com/2/events/?key=6c44664169336b58137f403044148&group_urlname=delhi-ruby&group_id=527930&status=upcoming&page=1&order=time&desc=true';
+    	var url = 'http://api.meetup.com/2/events/?key=6c44664169336b58137f403044148&group_urlname=delhi-ruby&group_id=527930&status=upcoming,past&page=1&order=time&desc=true';
 
     	$.ajax(
     		   { 'url' :url,
@@ -141,9 +134,9 @@
     				data.results[0]['name'].substring(0,60)+"...</a>"
       				+ "<div class='txtBody'>"+ data.results[0]['description'].substring(0,180)+"...</div></div>" +
     				"<a href='"+data.results[0]['event_url']+"' target='_blank' class='smallBtn'><strong>Read More</strong></a>";
-    																																																					  				$(newHTML).appendTo('.cols .col:first');
+    				$(newHTML).appendTo('.cols .col:first');
     						   }
-    			});*/
+    			});
 
 
     		});
