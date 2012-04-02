@@ -141,7 +141,11 @@
 
     		});
       </script>
-
+      
+<script type="text/javascript" src="http://vinsol.com/blog/jquery.js"></script>
+<script type="text/javascript" src="http://vinsol.com/blog/jtweet.js"></script>
+<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+<?php wp_head(); ?>
 <?php wp_footer(); ?>
 
 </body>
